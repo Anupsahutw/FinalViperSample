@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-AlamoViperSample-AlamoViperSampleUITests/Pods-AlamoViperSample-AlamoViperSampleUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework

@@ -1,0 +1,6 @@
+framework module Pods_AlamoViperSample_AlamoViperSampleUITests {
+  umbrella header "Pods-AlamoViperSample-AlamoViperSampleUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
