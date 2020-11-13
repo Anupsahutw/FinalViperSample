@@ -6,14 +6,13 @@
 //  Copyright © 2020 Anup.Sahu. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 protocol PostListViewProtocol: class {
-    //var presenter: PostListPresenterProtocol? { get set }
+    var presenter: PostListPresenterProtocol? { get set }
     
     // PRESENTER -> VIEW
-    func showGets()
+    func showGets(with gets: PostModel)
     
     func showError()
     
@@ -23,9 +22,9 @@ protocol PostListViewProtocol: class {
 }
 
 protocol PostListWireFrameProtocol: class {
-    static func createPostListModule() -> UIViewController
+    static func createGetListModule() -> UIViewController
     // PRESENTER -> WIREFRAME
-    func presentPostDetailScreen(from view: PostListViewProtocol, forPost post: PostModel)
+    func presentGetDetailScreen(from view: PostListViewProtocol, forPost post: PostModel)
 }
 
 protocol PostListPresenterProtocol: class {
@@ -40,6 +39,7 @@ protocol PostListPresenterProtocol: class {
 
 protocol PostListInteractorInputProtocol: class {
     var presenter: PostListInteractorOutputProtocol? { get set }
+    var remoteDatamanager: PostListRemoteDataManagerInputProtocol? { get set }
     
     // PRESENTER -> INTERACTOR
     func retrievePostList()
@@ -47,7 +47,7 @@ protocol PostListInteractorInputProtocol: class {
 
 protocol PostListInteractorOutputProtocol: class {
     // INTERACTOR -> PRESENTER
-    func didRetrievePosts(_ posts: [PostModel])
+    func didRetrievePosts(_ posts: PostModel)
     func onError()
 }
 
@@ -60,7 +60,7 @@ protocol PostListRemoteDataManagerInputProtocol: class {
 
 protocol PostListRemoteDataManagerOutputProtocol: class {
     // REMOTEDATAMANAGER -> INTERACTOR
-    func onPostsRetrieved(_ posts: [PostModel])
+    func onPostsRetrieved(_ posts: PostModel)
     func onError()
 }
 

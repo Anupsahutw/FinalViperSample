@@ -10,6 +10,8 @@
 		10FC2DD6624E013B0808FDDD /* Pods_AlamoViperSample_AlamoViperSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EDFAFA732BB7906326C7F63 /* Pods_AlamoViperSample_AlamoViperSampleUITests.framework */; };
 		2A6CAD409BB9766978DC1168 /* Pods_AlamoViperSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A95BD76E1B026FB8144EEB5 /* Pods_AlamoViperSampleTests.framework */; };
 		42F212226E112A2B6E6C283E /* Pods_AlamoViperSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26F22A7CA073813EA5D877B2 /* Pods_AlamoViperSample.framework */; };
+		8F9A2E99255E594000A0B269 /* GetListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9A2E98255E594000A0B269 /* GetListPresenter.swift */; };
+		8F9A2E9C255E6CE900A0B269 /* RouterWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9A2E9B255E6CE900A0B269 /* RouterWireframe.swift */; };
 		8F9B7BF8255BFA4A0009FA95 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9B7BF7255BFA4A0009FA95 /* Protocols.swift */; };
 		8F9B7C01255BFD430009FA95 /* Coord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9B7BFA255BFD420009FA95 /* Coord.swift */; };
 		8F9B7C02255BFD430009FA95 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9B7BFB255BFD420009FA95 /* Main.swift */; };
@@ -22,13 +24,15 @@
 		8F9B7C0D255C31A30009FA95 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9B7C0C255C31A30009FA95 /* Network.swift */; };
 		8F9B7C0F255C327C0009FA95 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9B7C0E255C327C0009FA95 /* AppError.swift */; };
 		8FA4F03D255A90C900F2257B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA4F03C255A90C900F2257B /* AppDelegate.swift */; };
-		8FA4F03F255A90C900F2257B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA4F03E255A90C900F2257B /* SceneDelegate.swift */; };
-		8FA4F041255A90C900F2257B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA4F040255A90C900F2257B /* ViewController.swift */; };
+		8FA4F041255A90C900F2257B /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA4F040255A90C900F2257B /* WeatherViewController.swift */; };
 		8FA4F044255A90C900F2257B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA4F042255A90C900F2257B /* Main.storyboard */; };
 		8FA4F046255A90D000F2257B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FA4F045255A90D000F2257B /* Assets.xcassets */; };
 		8FA4F049255A90D000F2257B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA4F047255A90D000F2257B /* LaunchScreen.storyboard */; };
 		8FA4F054255A90D000F2257B /* AlamoViperSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA4F053255A90D000F2257B /* AlamoViperSampleTests.swift */; };
 		8FA4F05F255A90D000F2257B /* AlamoViperSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA4F05E255A90D000F2257B /* AlamoViperSampleUITests.swift */; };
+		8FD70DA6255D4D4300754F29 /* GetListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD70DA5255D4D4300754F29 /* GetListInteractor.swift */; };
+		8FD70DA8255D66F900754F29 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD70DA7255D66F900754F29 /* EndPoint.swift */; };
+		8FD70DAB255D72D700754F29 /* RemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD70DAA255D72D700754F29 /* RemoteDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,8 @@
 		42567BC947CB05258F13A52B /* Pods-AlamoViperSample-AlamoViperSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoViperSample-AlamoViperSampleUITests.release.xcconfig"; path = "Target Support Files/Pods-AlamoViperSample-AlamoViperSampleUITests/Pods-AlamoViperSample-AlamoViperSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5A95BD76E1B026FB8144EEB5 /* Pods_AlamoViperSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamoViperSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8930AAA4433AAC38135AFEB3 /* Pods-AlamoViperSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoViperSample.release.xcconfig"; path = "Target Support Files/Pods-AlamoViperSample/Pods-AlamoViperSample.release.xcconfig"; sourceTree = "<group>"; };
+		8F9A2E98255E594000A0B269 /* GetListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetListPresenter.swift; sourceTree = "<group>"; };
+		8F9A2E9B255E6CE900A0B269 /* RouterWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterWireframe.swift; sourceTree = "<group>"; };
 		8F9B7BF7255BFA4A0009FA95 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		8F9B7BFA255BFD420009FA95 /* Coord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coord.swift; sourceTree = "<group>"; };
 		8F9B7BFB255BFD420009FA95 /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
@@ -70,8 +76,7 @@
 		8F9B7C0E255C327C0009FA95 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		8FA4F039255A90C900F2257B /* AlamoViperSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamoViperSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA4F03C255A90C900F2257B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8FA4F03E255A90C900F2257B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8FA4F040255A90C900F2257B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8FA4F040255A90C900F2257B /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		8FA4F043255A90C900F2257B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FA4F045255A90D000F2257B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FA4F048255A90D000F2257B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -82,6 +87,9 @@
 		8FA4F05A255A90D000F2257B /* AlamoViperSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlamoViperSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA4F05E255A90D000F2257B /* AlamoViperSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoViperSampleUITests.swift; sourceTree = "<group>"; };
 		8FA4F060255A90D000F2257B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FD70DA5255D4D4300754F29 /* GetListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetListInteractor.swift; sourceTree = "<group>"; };
+		8FD70DA7255D66F900754F29 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		8FD70DAA255D72D700754F29 /* RemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataManager.swift; sourceTree = "<group>"; };
 		AA9690C64DDD7C94E1F0F638 /* Pods-AlamoViperSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoViperSample.debug.xcconfig"; path = "Target Support Files/Pods-AlamoViperSample/Pods-AlamoViperSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +144,22 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8F9A2E97255E591E00A0B269 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8F9A2E98255E594000A0B269 /* GetListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8F9A2E9A255E6C2100A0B269 /* RouterWireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				8F9A2E9B255E6CE900A0B269 /* RouterWireframe.swift */,
+			);
+			path = RouterWireFrame;
+			sourceTree = "<group>";
+		};
 		8F9B7BF6255BF9B10009FA95 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,7 +185,7 @@
 		8F9B7C08255C22460009FA95 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8FA4F040255A90C900F2257B /* ViewController.swift */,
+				8FA4F040255A90C900F2257B /* WeatherViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,6 +196,7 @@
 				8F9B7C0E255C327C0009FA95 /* AppError.swift */,
 				8F9B7C0C255C31A30009FA95 /* Network.swift */,
 				8F9B7C0A255C30E40009FA95 /* NetworkProtocol.swift */,
+				8FD70DA7255D66F900754F29 /* EndPoint.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -201,12 +226,15 @@
 		8FA4F03B255A90C900F2257B /* AlamoViperSample */ = {
 			isa = PBXGroup;
 			children = (
+				8F9A2E9A255E6C2100A0B269 /* RouterWireFrame */,
+				8F9A2E97255E591E00A0B269 /* Presenter */,
+				8FD70DA9255D728900754F29 /* Remote */,
+				8FD70DA4255D4C4C00754F29 /* Interactor */,
 				8F9B7C09255C2DE50009FA95 /* Common */,
 				8F9B7C08255C22460009FA95 /* View */,
 				8F9B7BF9255BFD160009FA95 /* Entity */,
 				8F9B7BF6255BF9B10009FA95 /* Protocols */,
 				8FA4F03C255A90C900F2257B /* AppDelegate.swift */,
-				8FA4F03E255A90C900F2257B /* SceneDelegate.swift */,
 				8FA4F042255A90C900F2257B /* Main.storyboard */,
 				8FA4F045255A90D000F2257B /* Assets.xcassets */,
 				8FA4F047255A90D000F2257B /* LaunchScreen.storyboard */,
@@ -231,6 +259,22 @@
 				8FA4F060255A90D000F2257B /* Info.plist */,
 			);
 			path = AlamoViperSampleUITests;
+			sourceTree = "<group>";
+		};
+		8FD70DA4255D4C4C00754F29 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8FD70DA5255D4D4300754F29 /* GetListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		8FD70DA9255D728900754F29 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				8FD70DAA255D72D700754F29 /* RemoteDataManager.swift */,
+			);
+			path = Remote;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -472,18 +516,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FD70DA6255D4D4300754F29 /* GetListInteractor.swift in Sources */,
 				8F9B7C0D255C31A30009FA95 /* Network.swift in Sources */,
+				8FD70DAB255D72D700754F29 /* RemoteDataManager.swift in Sources */,
 				8F9B7C02255BFD430009FA95 /* Main.swift in Sources */,
-				8FA4F041255A90C900F2257B /* ViewController.swift in Sources */,
+				8FA4F041255A90C900F2257B /* WeatherViewController.swift in Sources */,
 				8F9B7C01255BFD430009FA95 /* Coord.swift in Sources */,
 				8FA4F03D255A90C900F2257B /* AppDelegate.swift in Sources */,
 				8F9B7C07255BFD430009FA95 /* PostModel.swift in Sources */,
 				8F9B7C0F255C327C0009FA95 /* AppError.swift in Sources */,
-				8FA4F03F255A90C900F2257B /* SceneDelegate.swift in Sources */,
 				8F9B7C06255BFD430009FA95 /* Sys.swift in Sources */,
+				8FD70DA8255D66F900754F29 /* EndPoint.swift in Sources */,
 				8F9B7BF8255BFA4A0009FA95 /* Protocols.swift in Sources */,
 				8F9B7C0B255C30E40009FA95 /* NetworkProtocol.swift in Sources */,
+				8F9A2E9C255E6CE900A0B269 /* RouterWireframe.swift in Sources */,
 				8F9B7C05255BFD430009FA95 /* Clouds.swift in Sources */,
+				8F9A2E99255E594000A0B269 /* GetListPresenter.swift in Sources */,
 				8F9B7C03255BFD430009FA95 /* Weather.swift in Sources */,
 				8F9B7C04255BFD430009FA95 /* Wind.swift in Sources */,
 			);
@@ -661,6 +709,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AlamoViperSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -679,6 +728,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AlamoViperSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
