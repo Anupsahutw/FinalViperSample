@@ -23,7 +23,9 @@ class PostListRemoteDataManager:PostListRemoteDataManagerInputProtocol {
          network.request(req: Endpoint()) { (result) in
                    switch result {
                    case .success(let successResponse):
-                    print("store success\(successResponse)"); self.remoteRequestHandler?.onPostsRetrieved(successResponse)
+                    print("store success\(successResponse)");
+                    //works like a listener
+                    self.remoteRequestHandler?.onPostsRetrieved(successResponse)
                        
                        //completion(successResponse)
                    case .failure(let serviceError):

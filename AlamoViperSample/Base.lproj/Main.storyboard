@@ -37,9 +37,12 @@
                                             <constraint firstAttribute="height" constant="40" id="Yfh-Jy-BRe"/>
                                         </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="Detail">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="navigateButtonClickedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xXo-hp-86M"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.2119721229167843" green="0.56391561608492069" blue="0.62579977663640451" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -76,6 +79,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1044.9275362318842" y="137.94642857142856"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Y4Y-Kz-Na4">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="l1U-T3-57f" customClass="DetailViewController" customModule="AlamoViperSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Iz-Ff-uSq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6E-NL-6qd">
+                                <rect key="frame" x="20" y="164" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAQ-Np-Phw">
+                                <rect key="frame" x="20" y="235" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZAQ-Np-Phw" firstAttribute="top" secondItem="Y6E-NL-6qd" secondAttribute="bottom" constant="50" id="Iku-RC-JEP"/>
+                            <constraint firstItem="Y6E-NL-6qd" firstAttribute="leading" secondItem="pQY-My-Rbw" secondAttribute="leading" constant="20" id="PFE-kn-7kc"/>
+                            <constraint firstItem="ZAQ-Np-Phw" firstAttribute="centerX" secondItem="pQY-My-Rbw" secondAttribute="centerX" id="U1H-J0-vza"/>
+                            <constraint firstItem="Y6E-NL-6qd" firstAttribute="top" secondItem="pQY-My-Rbw" secondAttribute="top" constant="120" id="Zfy-en-5zQ"/>
+                            <constraint firstItem="pQY-My-Rbw" firstAttribute="trailing" secondItem="ZAQ-Np-Phw" secondAttribute="trailing" constant="20" id="baW-hk-osE"/>
+                            <constraint firstItem="pQY-My-Rbw" firstAttribute="trailing" secondItem="Y6E-NL-6qd" secondAttribute="trailing" constant="20" id="kYs-4N-iMs"/>
+                            <constraint firstItem="ZAQ-Np-Phw" firstAttribute="leading" secondItem="pQY-My-Rbw" secondAttribute="leading" constant="20" id="mCi-e7-6oV"/>
+                            <constraint firstItem="Y6E-NL-6qd" firstAttribute="centerX" secondItem="pQY-My-Rbw" secondAttribute="centerX" id="nCd-ts-4pY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pQY-My-Rbw"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="ZAQ-Np-Phw" id="LtQ-08-1Sx"/>
+                        <outlet property="titleLabel" destination="Y6E-NL-6qd" id="qD1-uW-Z2q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L1a-gs-lha" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2017" y="123"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="c3I-Qq-QnN">

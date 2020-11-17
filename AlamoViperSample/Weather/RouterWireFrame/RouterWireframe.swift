@@ -37,7 +37,11 @@ class GetListWireFrame: PostListWireFrameProtocol {
         
     
     func presentGetDetailScreen(from view: PostListViewProtocol, forPost post: PostModel) {
-        //
+        let postDetailViewController = PostDetailWireFrame.createPostDetailModule(forPost: post)
+        
+             if let sourceView = view as? UIViewController {
+                sourceView.navigationController?.pushViewController(postDetailViewController, animated: true)
+             }
     }
     
 }

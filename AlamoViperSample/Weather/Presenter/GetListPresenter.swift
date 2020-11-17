@@ -21,7 +21,7 @@ class GetListPresenter: PostListPresenterProtocol {
     }
     
     func showPostDetail(forPost post: PostModel) {
-       // wireFrame?.presentPostDetailScreen(from: , forPost: )
+        wireFrame?.presentGetDetailScreen(from: view!, forPost: post)
     }
 }
 

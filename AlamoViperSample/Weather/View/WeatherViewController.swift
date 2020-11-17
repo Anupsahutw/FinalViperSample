@@ -21,16 +21,21 @@ class WeatherViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        navigationItem.title = "Weather"
         presenter?.viewDidLoad()
     }
     
     @IBAction func navigateButtonClicked(button: UIButton) {
-        
+
+            presenter?.showPostDetail(forPost: model!)
     }
 }
 extension WeatherViewController: PostListViewProtocol {
-    func showGets(with gets: PostModel) {
-        model = gets
+    func showGets(with postModel: PostModel) {
+        model = postModel
+        titleLabel.text = model?.name
+        descriptionLabel.text = "\(model?.main?.temp_min ?? 0.0) / \(model?.main?.temp_max ?? 0.0)"
+        
     }
 
     func showError() {

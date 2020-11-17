@@ -22,10 +22,10 @@ class GetListInteractor: PostListInteractorInputProtocol {
 
 extension GetListInteractor: PostListRemoteDataManagerOutputProtocol {
     func onPostsRetrieved(_ posts: PostModel) {
-        //
+        presenter?.didRetrievePosts(posts)
     }
     
     func onError() {
-        //
+        presenter?.onError()
     }
 }
