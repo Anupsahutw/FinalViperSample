@@ -12,7 +12,6 @@ struct Endpoint: Requestable {
         
     typealias ResponseType = PostModel
     
-    
     var baseUrl: URL {
         return URL(string: bffBaseURL)!
     }
