@@ -15,7 +15,7 @@ class PostDetailPresenter: PostDetailPresenterProtocol {
     var post: PostModel?
     
     func viewDidLoad() {
-        view?.showPostDetail(forPost: post!)
+        
     }
     
 }

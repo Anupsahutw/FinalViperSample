@@ -16,16 +16,14 @@ class DetailViewController: UIViewController {
      var presenter: PostDetailPresenterProtocol?
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter?.viewDidLoad()
+        
     }
 }
 
 extension DetailViewController: PostDetailViewProtocol {
     
     func showPostDetail(forPost post: PostModel) {
-        titleLabel?.text = post.weather?.first?.main
-        descriptionLabel?.text = post.weather?.first?.description
-
+        
     }
     
 }
