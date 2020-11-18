@@ -16,7 +16,14 @@ class PostDetailWireFrame: PostDetailWireFrameProtocol {
         let viewController = mainStoryboard.instantiateViewController(withIdentifier: "DetailViewController")
         if let view = viewController as? DetailViewController {
             
-            
+            let presenter: PostDetailPresenterProtocol = PostDetailPresenter()
+            let wireFrame: PostDetailWireFrameProtocol = PostDetailWireFrame()
+
+            view.presenter = presenter
+            presenter.view = view
+            presenter.post = post
+            presenter.wireFrame = wireFrame
+
             return viewController
         }
         return UIViewController()
