@@ -261,7 +261,6 @@
 				8F9B7C0E255C327C0009FA95 /* AppError.swift */,
 				8F9B7C0C255C31A30009FA95 /* Network.swift */,
 				8F9B7C0A255C30E40009FA95 /* NetworkProtocol.swift */,
-				8FD70DA7255D66F900754F29 /* EndPoint.swift */,
 			);
 			path = "Common-modules";
 			sourceTree = "<group>";
@@ -332,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				8FD70DAA255D72D700754F29 /* RemoteDataManager.swift */,
+				8FD70DA7255D66F900754F29 /* EndPoint.swift */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
