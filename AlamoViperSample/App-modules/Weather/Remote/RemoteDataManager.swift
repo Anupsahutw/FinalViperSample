@@ -26,12 +26,8 @@ class PostListRemoteDataManager:PostListRemoteDataManagerInputProtocol {
                     print("store success\(successResponse)");
                     //works like a listener
                     self.remoteRequestHandler?.onPostsRetrieved(successResponse)
-                       
-                       //completion(successResponse)
-                   case .failure(let serviceError):
-                      
+                   case .failure(_):
                        self.remoteRequestHandler?.onError()
-                       //error(serviceError.localizedDescription)
                    }
                }
     }
