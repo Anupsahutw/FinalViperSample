@@ -255,14 +255,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		8F9B7C09255C2DE50009FA95 /* Common-modules */ = {
+		8F9B7C09255C2DE50009FA95 /* Network-modules */ = {
 			isa = PBXGroup;
 			children = (
 				8F9B7C0E255C327C0009FA95 /* AppError.swift */,
 				8F9B7C0C255C31A30009FA95 /* Network.swift */,
 				8F9B7C0A255C30E40009FA95 /* NetworkProtocol.swift */,
 			);
-			path = "Common-modules";
+			path = "Network-modules";
 			sourceTree = "<group>";
 		};
 		8FA4F030255A90C900F2257B = {
@@ -291,7 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				8FEB97AC25650E4E00F3BC2A /* App-modules */,
-				8F9B7C09255C2DE50009FA95 /* Common-modules */,
+				8F9B7C09255C2DE50009FA95 /* Network-modules */,
 				8FA4F03C255A90C900F2257B /* AppDelegate.swift */,
 				8FA4F042255A90C900F2257B /* Main.storyboard */,
 				8FA4F045255A90D000F2257B /* Assets.xcassets */,
